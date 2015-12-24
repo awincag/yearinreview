@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="no-js">
 <head>
   <meta charset="utf-8">
   <!-- if IEmeta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
@@ -68,7 +68,8 @@
   <link href="styles/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="styles/css/fonts.css" type="text/css" rel="stylesheet">
   <link href="css/reactmain.css" rel="stylesheet">
-  <link href="css/bootstrap.css" rel="stylesheet">
+
+  <script src="js/modernizr.js"></script>
 
   <!-- if lt IE 9
   script(src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js")
@@ -85,53 +86,249 @@
   <header>
       <div class="nav" >
         <div class="main-logo-wrapper">
-          <a href="/" class=nav-logo>Year In Review</a>
+          <a href="#home" class="nav-logo" title="Back to Overview">Year In Review</a>
         </div>
 
         <!-- Right Navigation -->
-        <div id="toggle"> </div>
-        <div class="menu closed">
+        <nav id="cd-vertical-nav">
           <ul>
-            <li>January</li>
-            <li>February</li>
-            <li>March</li>
-            <li>April</li>
-            <li>May</li>
-            <li>June</li>
-            <li>July</li>
-            <li>August</li>
-            <li>September</li>
-            <li>October</li>
-            <li>November</li>
-            <li>December</li>
+            <li>
+              <a href="#january" data-number="1">
+                <span class="cd-label">January</span>
+              </a>
+            </li>
+            <li>
+              <a href="#february" data-number="2">
+                <span class="cd-label">February</span>
+              </a>
+            </li>
+            <li>
+              <a href="#march" data-number="3">
+                <span class="cd-label">March</span>
+              </a>
+            </li>
+            <li>
+              <a href="#april" data-number="4">
+                <span class="cd-label">April</span>
+              </a>
+            </li>
+            <li>
+              <a href="#may" data-number="5">
+                <span class="cd-label">May</span>
+              </a>
+            </li>
+            <li>
+              <a href="#june" data-number="6">
+                <span class="cd-label">June</span>
+              </a>
+            </li>
+            <li>
+              <a href="#july" data-number="7">
+                <span class="cd-label">July</span>
+              </a>
+            </li>
+            <li>
+              <a href="#august" data-number="8">
+                <span class="cd-label">August</span>
+              </a>
+            </li>
+            <li>
+              <a href="#september" data-number="9">
+                <span class="cd-label">September</span>
+              </a>
+            </li>
+            <li>
+              <a href="#october" data-number="10">
+                <span class="cd-label">October</span>
+              </a>
+            </li>
+            <li>
+              <a href="#november" data-number="11">
+                <span class="cd-label">November</span>
+              </a>
+            </li>
+            <li>
+              <a href="#december" data-number="12">
+                <span class="cd-label">December</span>
+              </a>
+            </li>
           </ul>
-        </div>
+        </nav>
     </div>
   </header>
 
   <!-- main content -->
-  <div class="content wrap">
+  <div class="content">
 
-    <section>
-      <div id="home">
+    <div id="home" class="cd-section">
+      <div class="wrap">
         <div class="vertical">
-          <span class="stretch box right box-bg">2015</span>
-          <h1 class="center">A Year in Review:</h1>
+          <span class="stretch box right">2015</span>
+          <h1 class="text-center">A Year in Review:</h1>
           <div class="paragraph">
             <p class="left-align">Check out what I was up to this year. It was a good time with some great friends. Lots of ups, a few downs, but all around good laughs. I'll slowly be adding to this over the next few weeks. If you have photos to add, please <a href="mailto:alex.cagwin@gmail.com" type="mail">send them to me.</a></p>
           </div>
         </div>
-    </section>
+      </div>
+    </div>
+
+
+    <!-- January -->
+    <div id="january" class="cd-section">
+        <div class="page-head">
+          <div class="wrap">
+            <div class="center">
+              <h3 class="stretch box">January</h3>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+    <!-- February -->
+    <div id="february" class="cd-section">
+        <div class="page-head">
+          <div class="wrap">
+            <div class="center">
+              <h3 class="stretch box">February</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="wrap">
+          <div class="block">
+            <h3 class="text-center">"I'm New In Town"</h3>
+          </div>
+          <div class="block">
+            <p>Finally was able to move from home all the way up to the city, San Francisco.
+          </div>
+        </div>
+    </div>
+
+
+    <!-- March -->
+    <div id="march" class="cd-section">
+        <div class="page-head">
+          <div class="wrap">
+            <div class="center">
+              <h3 class="stretch box">March</h3>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+    <!-- April -->
+    <div id="april" class="cd-section">
+        <div class="page-head">
+          <div class="wrap">
+            <div class="center">
+              <h3 class="stretch box">April</h3>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- May -->
+    <div id="may" class="cd-section">
+        <div class="page-head">
+          <div class="wrap">
+            <div class="center">
+              <h3 class="stretch box">May</h3>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+    <!-- June -->
+    <div id="june" class="cd-section">
+        <div class="page-head">
+          <div class="wrap">
+            <div class="center">
+              <h3 class="stretch box">June</h3>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+    <!-- July -->
+    <div id="july" class="cd-section">
+        <div class="page-head">
+          <div class="wrap">
+            <div class="center">
+              <h3 class="stretch box">July</h3>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+    <!-- August -->
+    <div id="august" class="cd-section">
+        <div class="page-head">
+          <div class="wrap">
+            <div class="center">
+              <h3 class="stretch box">August</h3>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+    <!-- September -->
+    <div id="september" class="cd-section">
+        <div class="page-head">
+          <div class="wrap">
+            <div class="center">
+              <h3 class="stretch box">September</h3>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+    <!-- October  -->
+    <div id="october" class="cd-section">
+        <div class="page-head">
+          <div class="wrap">
+            <div class="center">
+              <h3 class="stretch box">October</h3>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+    <!-- November-->
+    <div id="november" class="cd-section">
+        <div class="page-head">
+          <div class="wrap">
+            <div class="center">
+              <h3 class="stretch box">November</h3>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+    <!-- December -->
+    <div id="december" class="cd-section">
+        <div class="page-head">
+          <div class="wrap">
+            <div class="center">
+              <h3 class="stretch box">December</h3>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+
 
   </div>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script>
-    $( "#toggle" ).click(function() {
-        $(".menu").toggleClass("closed");
-        $(this).toggleClass("closed");
-        $(".content").toggleClass("closed");
-        $("#wrapper").toggleClass("closed")
-    });
-</script>
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
 </body>
 </html>
