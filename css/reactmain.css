@@ -1,12 +1,12 @@
 html{
-  font-family:"freight-sans-pro",Helvetica,Roboto,Arial,sans-serif;
+  font-family:"SofiaProLight",Helvetica,Roboto,Arial,sans-serif;
   /* font-family:proxima-nova,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif; */
   color:#fff;
   line-height:1.51;
 }
 
 p{
-  font-family:"freight-sans-pro", sans-serif;
+  font-family:"SofiaProLight", sans-serif;
   font-weight: 100;
   margin:0 0 0.9em;
   font-size: 24pt;
@@ -16,13 +16,16 @@ p{
   text-rendering:optimizelegibility
 }
 
+/*
 .subHeader{
   font-size:1.5em;
-  font-weight:600; !important;
+  font-weight:600;
   line-height:1.5em;
   margin-bottom:1.5em;
   text-transform: uppercase;
 }
+
+*/
 
 em{
   font-style:italic
@@ -37,7 +40,7 @@ section {
 }
 
 h1,h2,h3,h4,h5,h6{
-  font-family: "freight-big-pro", sans-serif;
+  font-family: "FFMarkWebProBold", sans-serif;
   font-weight: 600;
   margin:10px 0;
   font-family:inherit;
