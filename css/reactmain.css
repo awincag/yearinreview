@@ -26,6 +26,7 @@ p{
   margin:0 0 0.9em;
   font-size: 18pt;
   line-height: 1.56em;
+  display: inherit;
   margin-bottom: 1.8em;
   letter-spacing: 0.01em;
   text-rendering:optimizelegibility
@@ -51,7 +52,6 @@ h1,h2,h3,h4,h5,h6{
   font-weight: 600;
   margin:10px 0;
   line-height: 1.5em;
-  color:inherit;
   text-rendering:optimizelegibility
 }
 
@@ -66,7 +66,8 @@ h1,h2,h3{
 }
 
 h1{
-  font-size: 5em
+  font-size: 5em;
+  display: inline-block;
 }
 
 h2{
@@ -119,14 +120,14 @@ li{
   line-height:1.5em;
 }
 
-a{
-  color:#fff;
+a {
+  color: inherit;
   text-decoration:underline;
-  transition: 0.1s ease;
+  transition: all 0.2s ease-out;
   }
   a:hover,a:focus{
     text-decoration:underline;
-    color:#f0f0f0;
+    opacity: 0.7;
   }
   a:focus{
     outline:thin dotted #333;
@@ -222,6 +223,14 @@ span.stretch {
   border: solid 5px #fff;
 }
 
+.box-dark {
+  display: inline-block;
+  padding: .4em 1.2em .4em 1.2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border: solid 5px #333;
+}
+
 .wrap{
   width:50%;
   margin-left:auto;
@@ -231,8 +240,10 @@ span.stretch {
 }
 
 .block {
-  margin-top: 3.5em;
-  margin-bottom: 3.5em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  display: inline-block;
+  width: 100%
 }
 
 .p-divide {
@@ -242,9 +253,33 @@ span.stretch {
   max-width: 45px;
 }
 
+.p-divide-dark {
+  margin: 5em auto 5em auto;
+  background-color: #F2F2F2;
+  min-height: 4px;
+  max-width: 45px;
+}
+
 .blockquote {
   padding: 1em 0 1em 3em;
   border-left: solid 3px #FF3366;
+}
+
+.full-album {
+  font-family: "FFMarkWebProBold", sans-serif;
+  font-weight: 600;
+  font-size: 1.6em;
+  text-align: center;
+  margin-top: 3.5em;
+  margin-bottom: 1.5em;
+}
+
+.full-album a {
+  color: #333;
+}
+
+.full-album a:hover {
+  color: #555;
 }
 
 #wrapper {
@@ -260,7 +295,55 @@ span.stretch {
 }
 
 #february {
-  background: #ccc;
+  background: #F89FBD;
+}
+
+#march {
+  background: #57D6FF;
+}
+
+#april {
+  background: #F5DCAC;
+}
+
+#may {
+  background: #FFF;
+}
+
+#june {
+  background:#01674C;
+}
+
+#july {
+  background: #F33;
+}
+
+#august {
+  background: #FED45C;
+}
+
+#september {
+  background: #AF3B9B;
+}
+
+#october {
+  background: #28C2BC;
+}
+
+#november {
+  background: #C77621;
+}
+
+#december {
+  background: #fff;
+}
+
+.dark {
+  color: #FFF;
+}
+
+.light {
+  color: #333;
 }
 
 .vertical {
@@ -303,7 +386,7 @@ h1:hover .hash-link,h2:hover .hash-link,h3:hover .hash-link,h4:hover .hash-link,
 
 .cd-section {
   min-height: 100%;
-  padding: 2em 0;
+  padding: 1.5em 0 5em 0;
 }
 
 .cd-scroll-down {
@@ -383,6 +466,11 @@ h1:hover .hash-link,h2:hover .hash-link,h3:hover .hash-link,h4:hover .hash-link,
 .no-touch #cd-vertical-nav a.is-selected .cd-label {
   color: #333;
 }
+
+.no-touch #cd-vertical-nav #january a.is-selected .cd-label {
+  color: #FFF;
+}
+
 .no-touch #cd-vertical-nav .cd-dot {
   position: relative;
   /* we set a top value in order to align the dot with the label. If you change label's font, you may need to change this top value*/
@@ -403,7 +491,7 @@ h1:hover .hash-link,h2:hover .hash-link,h3:hover .hash-link,h4:hover .hash-link,
 .no-touch #cd-vertical-nav .cd-label {
   position: relative;
   margin-right: 10px;
-  color: #DDD;
+  color: #F9F9F9;
   font-size: 1.25em;
   font-weight: 600;
   -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
@@ -578,8 +666,9 @@ h1:hover .hash-link,h2:hover .hash-link,h3:hover .hash-link,h4:hover .hash-link,
 }
 
 .page-head {
-  padding: 3em 0 3em 0;
+  padding: 1.8em 0 1.8em 0;
   border-bottom: solid 1px #bbb;
+  margin-bottom: 3em;
 }
 
 
