@@ -363,6 +363,7 @@ h1:hover .hash-link,h2:hover .hash-link,h3:hover .hash-link,h4:hover .hash-link,
 }
 .no-touch #cd-vertical-nav a:hover .cd-label {
   opacity: 1;
+  color: #333;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
@@ -394,7 +395,7 @@ h1:hover .hash-link,h2:hover .hash-link,h3:hover .hash-link,h4:hover .hash-link,
 .no-touch #cd-vertical-nav .cd-label {
   position: relative;
   margin-right: 10px;
-  color: #FFF;
+  color: #DDD;
   font-size: 1.25em;
   font-weight: 600;
   -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
