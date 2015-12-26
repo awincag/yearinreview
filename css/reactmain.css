@@ -411,18 +411,36 @@ img {
   position: relative;
   overflow: hidden;
   margin: 0.6em;
+  width: 100%;
+  padding-bottom: 66%;
+  transition: opacity 1s linear;
 }
 
-.placeholder img {
+.placeholder-loaded {
+  background-color: #f6f6f6;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  opacity: 1;
+  margin: 0.6em;
+  width: 100%;
+  transition: opacity 1s linear;
+}
+
+/* .placeholder-loaded {
   position: absolute;
   opacity: 0;
   top: 0;
   left: 0;
   width: 100%;
   transition: opacity 1s linear;
-}
+} */
 
 .placeholder img.loaded {
+  opacity: 1;
+}
+
+.placeholder .loaded {
   opacity: 1;
 }
 
