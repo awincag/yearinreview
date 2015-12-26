@@ -136,6 +136,119 @@ a {
     outline-offset:-2px
 }
 
+
+#wrapper {
+
+}
+
+#home {
+  background: linear-gradient(145deg, #66CCC3, #7FC8D7, #69ADCE, #728DA5)
+}
+
+#january {
+  background: #333;
+}
+
+#february {
+  background: #F89FBD;
+}
+
+#march {
+  background: #57D6FF;
+}
+
+#april {
+  background: #F5DCAC;
+}
+
+#may {
+  background: #FFF;
+}
+
+#june {
+  background:#01674C;
+}
+
+#july {
+  background: #F33;
+}
+
+#august {
+  background: #FED45C;
+}
+
+#september {
+  background: #AF3B9B;
+}
+
+#october {
+  background: #28C2BC;
+}
+
+#november {
+  background: #C77621;
+}
+
+#december {
+  background: #fff;
+}
+
+#end {
+  background: #FD6382;
+}
+
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+
+  z-index: 2000;
+  position: fixed;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 5px;
+  width: 200px;
+  background: #fff;
+  border: 1px solid #29d;
+
+  overflow: hidden;
+}
+
+.pace .pace-progress {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+
+  max-width: 200px;
+  position: fixed;
+  z-index: 2000;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  height: 100%;
+  width: 100%;
+  background: #29d;
+}
+
+.pace.pace-inactive {
+  display: none;
+}
+
 .center {
   margin-left: auto;
   margin-right: auto;
@@ -313,65 +426,6 @@ span.stretch {
 }
 */
 
-#wrapper {
-
-}
-
-#home {
-  background: linear-gradient(145deg, #66CCC3, #7FC8D7, #69ADCE, #728DA5)
-}
-
-#january {
-  background: #333;
-}
-
-#february {
-  background: #F89FBD;
-}
-
-#march {
-  background: #57D6FF;
-}
-
-#april {
-  background: #F5DCAC;
-}
-
-#may {
-  background: #FFF;
-}
-
-#june {
-  background:#01674C;
-}
-
-#july {
-  background: #F33;
-}
-
-#august {
-  background: #FED45C;
-}
-
-#september {
-  background: #AF3B9B;
-}
-
-#october {
-  background: #28C2BC;
-}
-
-#november {
-  background: #C77621;
-}
-
-#december {
-  background: #fff;
-}
-
-#end {
-  background: #FD6382;
-}
 
 .dark {
   color: #FFF;
