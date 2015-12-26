@@ -32,27 +32,6 @@
     }
   };
 
-  paceOptions = {
-<<<<<<< HEAD
-    ajax: false;
-    document: false,
-    eventLag: false,
-    elements: {
-      selectors: ['body']
-    }
-
-    // only show the progress on regular and ajax-y page navigation
-    // not every request
-    restartOnRequestAfter: false
-  };
-
-=======
-    elements {
-      selectors: ['body']
-    }
-  }
->>>>>>> gh-pages
-
   now = function() {
     var _ref;
     return (_ref = typeof performance !== "undefined" && performance !== null ? typeof performance.now === "function" ? performance.now() : void 0 : void 0) != null ? _ref : +(new Date);
