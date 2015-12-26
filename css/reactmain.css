@@ -449,6 +449,14 @@ img {
   filter: blur(50px);
 }
 
+.load {
+  transition: opacity 1s linear;
+}
+
+._lazyloaded {
+  transition: opacity 1s linear;
+}
+
 hr{
   height:0;
   border-top:1px solid #ccc;
