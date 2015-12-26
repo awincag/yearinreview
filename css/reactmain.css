@@ -398,14 +398,19 @@ span.stretch {
 img {
   height: auto;
   width: 100%;
-  padding: .5em;
+}
+
+.img-block {
+  display: flex;
 }
 
 .placeholder {
+  background-color: #f6f6f6;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
+  margin: 0.6em;
 }
 
 .placeholder img {
@@ -422,9 +427,9 @@ img {
 }
 
 .img-small {
+  -webkit-filter: blur (50px);
   filter: blur(50px);
 }
-
 
 hr{
   height:0;
