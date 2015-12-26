@@ -33,9 +33,18 @@
   };
 
   paceOptions = {
-    elements: False,
+    ajax: false;
+    document: false,
+    eventLag: false,
+    elements: {
+      selectors: ['body']
+    }
+
+    // only show the progress on regular and ajax-y page navigation
+    // not every request
     restartOnRequestAfter: false
   };
+
 
   now = function() {
     var _ref;
