@@ -33,6 +33,7 @@
   };
 
   paceOptions = {
+<<<<<<< HEAD
     ajax: false;
     document: false,
     eventLag: false,
@@ -45,6 +46,12 @@
     restartOnRequestAfter: false
   };
 
+=======
+    elements {
+      selectors: ['body']
+    }
+  }
+>>>>>>> gh-pages
 
   now = function() {
     var _ref;
