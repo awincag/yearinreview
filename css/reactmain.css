@@ -237,6 +237,13 @@ html{
   background: #fff;
 }
 
+@media only screen and (min-width: 768px) {
+  .cd-section p {
+    font-size: 16pt;
+    line-height: 2;
+  }
+}
+
 .left{
   float:left
 }
