@@ -317,6 +317,22 @@ span.stretch {
   padding-right:20px
 }
 
+.img-wrap {
+  max-width:1014px;
+  width: 100%;
+  position:relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.img-wrap-pano {
+  max-width: 1300px;
+  width: 100%;
+  position:relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
 .block {
   margin-top: 2em;
   margin-bottom: 2em;
@@ -345,12 +361,41 @@ span.stretch {
   max-width: 45px;
 }
 
+.quote-wrap {
+  max-width:1004px;
+  width: 100%;
+  height:auto;
+  margin:0 auto 25px auto;
+}
+
 .blockquote {
   padding: 1em 0 1em 3em;
   border-left: solid 3px #FF3366;
 }
 
 .blockquote-light {
+  padding: 1em 0 1em 3em;
+  border-left: solid 3px #FFF;
+  font-weight: bold;
+}
+
+.img-blockquote {
+  padding: 1em 0 1em 3em;
+  border-left: solid 3px #555;
+}
+
+.img-blockquote-small {
+  padding: 1em 0 1em 3em;
+  border-left: solid 3px #555;
+}
+
+.img-blockquote span{
+  font-size: 18pt;
+  font-family: inherit;
+
+}
+
+.img-blockquote-light {
   padding: 1em 0 1em 3em;
   border-left: solid 3px #FFF;
   font-weight: bold;
@@ -395,13 +440,78 @@ span.stretch {
   padding-left:20px;
   padding-right:20px}
 
-img {
+
+.ratio-horizontal {
+  padding-bottom: 56.7%;
+}
+
+.ratio-horizontal-small {
+  padding-bottom: 28.7%;
+  width: 50% !important;
+}
+
+.ratio-horizontal-pano {
+  padding-bottom:
+}
+
+.ratio-vertical {
+  padding-bottom: 66.2%;
+  width: 50% !important;
+}
+
+.ratio-vertical-big {
+  padding-bottom: 98%;
+  padding-left: 12.5%;
+  padding-right: 12.5%;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+/* .img-block img {
+  min-width: 500px;
+  min-height: 500px;
+  width: auto;
   height: auto;
+  border-radius: 2px;
+  border: 1px solid #f8f8f8;
+  background: url(..media/ajax-loader.gif) no-repeat center center;
+} */
+
+.loading {
+  border-radius: 2px;
+  border: 1px solid #f2f2f2;
+  background: url(../media/ajax-loader.gif) no-repeat center center;
+}
+
+img {
+  max-width:100%;
+  opacity: 0;
+  -webkit-transform: scale(.5, .5);
+  transform: scale(.5, .5);
+  webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+  margin: 5px;
+}
+
+img.b-loaded {
+  opacity: 1;
   width: 100%;
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
 }
 
 .img-block {
-  display: flex;
+  float:left;
+  height: 0;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.img-block-container {
+  margin: 2px;
 }
 
 .placeholder {
