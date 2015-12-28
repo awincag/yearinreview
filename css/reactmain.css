@@ -729,8 +729,8 @@ h1:hover .hash-link,h2:hover .hash-link,h3:hover .hash-link,h4:hover .hash-link,
   display: block;
   z-index: 2;
   position: fixed;
-  bottom: 30px;
-  right: 5%;
+  bottom: 50px;
+  right: 10%;
   height: 44px;
   width: 44px;
   border-radius: 0.25em;
@@ -881,6 +881,7 @@ h1:hover .hash-link,h2:hover .hash-link,h3:hover .hash-link,h4:hover .hash-link,
   background-position: 0 0;
   background-repeat: no-repeat;
   text-indent: -9999px;
+  z-index: 2000;
 }
 
 .page-head {
@@ -892,12 +893,23 @@ h1:hover .hash-link,h2:hover .hash-link,h3:hover .hash-link,h4:hover .hash-link,
 @media screen and (max-width: 768px) {
   .content h1 {
     font-size: 3.5em;
-    font-size: 16pt;
+  }
+  .content span {
+    font-family: "FFMarkWebProBold", sans-serif;
+    font-weight: bold;
+    font-size: 2.5em;
   }
   .content p {
     font-size: 16pt;
-    font-size: 1em;
-    line-height: 2;
+    line-height: 1.5em;
+  }
+  .content .box {
+    display: inline-block;
+    padding: .2em 1.2em .2em 1.2em;
+    margin-top:2.5em;
+    margin-bottom:1em;
+    width:100%;
+    text-align:center;
   }
 }
 
