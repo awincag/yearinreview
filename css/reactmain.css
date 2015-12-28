@@ -254,7 +254,7 @@ html{
 .content {
   width: 100%;
   height: 100%;
-  margin-left: 0;
+  margin: 0;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   -webkit-box-sizing:border-box;
@@ -539,7 +539,6 @@ img.b-loaded {
   background-repeat: no-repeat;
   position: relative;
   opacity: 1;
-  margin: 0.6em;
   width: 100%;
   transition: opacity 1s linear;
 }
@@ -898,6 +897,11 @@ h1:hover .hash-link,h2:hover .hash-link,h3:hover .hash-link,h4:hover .hash-link,
     font-family: "FFMarkWebProBold", sans-serif;
     font-weight: bold;
     font-size: 2.5em;
+  }
+  .content #august span {
+    font-family: "FFMarkWebProBold", sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
   }
   .content p {
     font-size: 16pt;
