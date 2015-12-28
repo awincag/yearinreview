@@ -898,6 +898,9 @@ h1:hover .hash-link,h2:hover .hash-link,h3:hover .hash-link,h4:hover .hash-link,
     font-weight: bold;
     font-size: 2.5em;
   }
+  .touch #cd-vertical-nav a {
+    text-decoration: none;
+  }
   .content #august span {
     font-family: "FFMarkWebProBold", sans-serif;
     font-weight: bold;
