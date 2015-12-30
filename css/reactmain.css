@@ -493,8 +493,6 @@ span.stretch {
 img {
   max-width:100%;
   opacity: 0;
-  -webkit-transform: scale(.5, .5);
-  transform: scale(.5, .5);
   webkit-transition: all .5s ease;
   -moz-transition: all .5s ease;
   -o-transition: all .5s ease;
@@ -505,8 +503,6 @@ img {
 img.b-loaded {
   opacity: 1;
   width: 100%;
-  -webkit-transform: scale(1, 1);
-  transform: scale(1, 1);
 }
 
 .img-block {
