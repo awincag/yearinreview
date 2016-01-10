@@ -486,7 +486,7 @@ span.stretch {
 
 .loading {
   border-radius: 2px;
-  border: 1px solid #f2f2f2;
+  background: rgba(0,0,0,.1);
   background: url(../media/ajax-loader.gif) no-repeat center center;
 }
 
