@@ -224,18 +224,18 @@ img {
   width: 100%;
 }
 
-.photo-width.lazyload, .lazyloading{
+.photo-width.lazyload, .lazyloading {
   opacity: 0;
-    -webkit-transform: translateY(10%);
-            transform: translateY(10%);
-  transition: .2s ease-out;
+    -webkit-transform: translateY(7%);
+            transform: translateY(7%);
+  transition: .3s ease-out;
 }
 
 .photo-width.lazyloaded {
     opacity: 1;
     -webkit-transform: translateY(0);
             transform: translateY(0);
-    transition: .2s ease-out;
+    transition: .3s ease-out;
 }
 
 .hidden {
