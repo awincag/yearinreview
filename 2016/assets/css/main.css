@@ -39,6 +39,10 @@ p{
 
 */
 
+body {
+  margin: 0;
+}
+
 
 
 em{
@@ -243,28 +247,16 @@ img {
   visibility: hidden;
 }
 
-.photo-width {
-  }
-  @media only screen and (min-width: 700px) {
-    .photo-width {
-      max-width: 700px;
-    }
-  }
-  @media only screen and (min-width: 1000px) {
-    .photo-width {
-      max-width: 1000px;
-    }
-  }
-  @media only screen and (min-width: 1200px) {
-    .photo-width {
-      max-width: 1200px;
-    }
-  }
-  @media only screen and (min-width: 1800px) {
-    .photo-width {
-      max-width: 1600px;
-    }
-  }
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.fw .photo-width {
+  max-width: 100%;
+}
 
 .fw, .fw-2 {
   width: 100%;
@@ -286,3 +278,129 @@ img {
 .page-header {
   padding: 20em 0;
 }
+
+.gallery, .landscape {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 1.5em; }
+
+.gallery.two .photo-width {
+  flex-basis: 48%;
+  margin: 0 1%;
+}
+
+.gallery.three .photo-width {
+  flex-basis: 32%;
+  margin: 0 1%;
+}
+
+.landscape .photo-width {
+  margin: 0 1%;
+}
+
+@media only screen and (min-width: 700px) {
+  .gallery, .landscape {
+    max-width: 700px;
+    padding: 25px 1%;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .gallery, .landscape {
+    max-width: 1000px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .gallery, .landscape {
+    max-width: 1200px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .gallery, .landscape {
+    max-width: 1400px;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  .gallery, .landscape {
+    max-width: 1800px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .quote-right, .quote-left {
+    max-width: 1200px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .quote-right, .quote-left {
+    max-width: 1400px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .quote-right, .quote-left {
+    max-width: 1800px;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  .quote-right, .quote-left {
+    max-width: 2000px;
+  }
+}
+
+
+.quote-right, .quote-left {
+  padding: 25px 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  @media only screen and (min-width: 700px) {
+    .quote-right, .quote-left {
+      padding: 25px 1%;
+    }
+  }
+
+.quote--content {
+  margin: 3em 0 0em;
+}
+  @media only screen and (min-width: 1000px) {
+    .quote-right {
+      flex-direction: row;
+    }
+    .quote-left {
+      flex-direction: row-reverse;
+    }
+    .quote-right .photo-width {
+      flex: 5;
+    }
+    .quote--content {
+      flex: 2;
+      margin: 2em;
+    }
+}
+
+
+
+/*
+.photo-width {
+  }
+  @media only screen and (min-width: 700px) {
+    .photo-width {
+      max-width: 700px;
+    }
+  }
+  @media only screen and (min-width: 1000px) {
+    .photo-width {
+      max-width: 1000px;
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    .photo-width {
+      max-width: 1200px;
+    }
+  }
+  @media only screen and (min-width: 1800px) {
+    .photo-width {
+      max-width: 1600px;
+    }
+  } */
