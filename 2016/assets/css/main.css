@@ -226,16 +226,16 @@ img {
 
 .photo-width.lazyload, .lazyloading {
   opacity: 0;
-    -webkit-transform: translateY(7%);
-            transform: translateY(7%);
-  transition: .3s ease-out;
+    -webkit-transform: translateY(12%);
+            transform: translateY(12%);
+  transition: .3s ease;
 }
 
 .photo-width.lazyloaded {
     opacity: 1;
     -webkit-transform: translateY(0);
             transform: translateY(0);
-    transition: .3s ease-out;
+    transition: .3s ease;
 }
 
 .hidden {
