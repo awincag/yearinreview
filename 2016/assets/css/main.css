@@ -224,7 +224,7 @@ img {
   width: 100%;
 }
 
-.photo-width.lazyload {
+.photo-width.lazyload, .lazyloading{
   opacity: 0;
     -webkit-transform: translateY(10%);
             transform: translateY(10%);
