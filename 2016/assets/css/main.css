@@ -82,26 +82,26 @@ h1{
 
 .h1 {
   font-family: "Miller Ban Lt";
-  font-size:2.5rem;
+  font-size: 4rem;
   line-height: 1.15em;}
   @media only screen and (min-width: 700px) {
     .h1 {
-      font-size: 3.25rem;
+      font-size: 6.5rem;
     }
   }
   @media only screen and (min-width: 1000px) {
     .h1 {
-      font-size: 4.375rem;
+      font-size: 8rem;
     }
   }
   @media only screen and (min-width: 1200px) {
     .h1 {
-      font-size: 5.938rem;
+      font-size: 10rem;
     }
   }
   @media only screen and (min-width: 1800px) {
     .h1 {
-      font-size: 7.875rem;
+      font-size: 14rem;
     }
 }
 
@@ -251,8 +251,13 @@ img {
 
 .new--major {
   max-width: 1200px;
-  padding: .75em 1.5em;
+  padding: .75em 1.5em; }
+  @media only screen and (min-width: 1800px) {
+    .new--major {
+      max-width: 1400px;
+    }
 }
+
 
 .new--break {
   width: 100%;
@@ -324,6 +329,17 @@ img {
     }
 }
 
+@media only screen and (min-width: 1000px) {
+  .new--content-main p {
+    font-size: 1.25rem;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .new--content-main p {
+    font-size: 1.55rem;
+  }
+}
+
 .fw .photo-width {
   width: 100%;
 }
@@ -346,8 +362,96 @@ img {
 }
 
 .page-header {
-  padding: 20em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 5em 0; }
+  @media only screen and (min-width: 700px) {
+    .page-header {
+      margin: 0 0 10em 0;
+    }
+  }
+  @media only screen and (min-width: 1000px) {
+    .page-header {
+      margin: 0 0 12em 0;
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    .page-header {
+      margin: 0 0 15em 0;
+    }
+  }
+
+
+.page--title {
+  padding: 8em 1.5em;
+  max-width: 1200px;
+  width: 100%;
+  z-index: 2; }
+  @media only screen and (min-width: 1000px) {
+    .page--title {
+      padding: 11em 1.5em;
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    .page--title {
+      padding: 12em 1.5em;
+    }
+  }
+  @media only screen and (min-width: 1800px) {
+    .page--title {
+      max-width: 1400px;
+    }
+  }
+
+.page-header {
+  position: relative;
 }
+
+.page--hero {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: -3em;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.page--hero img {
+  width: 300%;
+}
+  @media only screen and (min-width: 700px) {
+    .page--hero {
+      left: -4em;
+    }
+    .page--hero img {
+      width: 200%;
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    .page--hero {
+      left: -5em;
+    }
+    .page--hero img {
+      width: 160%;
+    }
+  }
+  @media only screen and (min-width: 1800px) {
+    .page--hero {
+      left: -6em;
+    }
+    .page--hero img {
+      width: 140%;
+    }
+  }
+  @media only screen and (min-width: 2200px) {
+    .page--hero {
+      left: -4em;
+    }
+    .page--hero img {
+      width: 200%;
+    }
+  }
 
 .gallery, .landscape, .portrait {
   display: flex;
@@ -467,7 +571,9 @@ img {
 
 .quote--header {
   font-family: "Neue Haas Grotesk Disp Bd", sans-serif;
+  display: flex;
   color: #D8D8D8;
+  margin: 0 0 .5em 0;
   font-size: .937rem; }
   @media only screen and (min-width: 1000px) {
     .quote--header {
