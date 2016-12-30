@@ -1,5 +1,5 @@
 html{
-  font-family:"SofiaProRegular",Helvetica,Roboto,Arial,sans-serif;
+  font-family: "Miller Disp Rom", serif;
   /* font-family:proxima-nova,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif; */
   color:#ffffff;
   background-color: #000000;
@@ -7,24 +7,19 @@ html{
 }
 
 p{
-  font-family:"SofiaProRegular", sans-serif;
-  font-size: 1.063rem;
+  font-family: "Miller Disp Rom", serif;
+  font-size: 1rem;
   line-height: 1.51em;
   margin: 0 0 1.75em 0;
   text-rendering: optimizelegibility; }
-  @media only screen and (min-width: 1000px) {
-    p {
-      font-size: 1.125rem;
-    }
-  }
   @media only screen and (min-width: 1200px) {
     p {
-      font-size: 1.4rem;
+      font-size: 1.063rem;
     }
   }
   @media only screen and (min-width: 1800px) {
     p {
-      font-size: 1.6rem;
+      font-size: 1.25rem;
     }
 }
 
@@ -86,7 +81,7 @@ h1{
   font-size: 4.6rem; }
 
 .h1 {
-  font-family: "FFMarkWebProBlack", sans-serif;
+  font-family: "Miller Ban Lt";
   font-size:2.5rem;
   line-height: 1.15em;}
   @media only screen and (min-width: 700px) {
@@ -230,16 +225,16 @@ img {
 
 .photo-width.lazyload, .lazyloading {
   opacity: 0;
-    -webkit-transform: translateY(20%);
-            transform: translateY(20%);
-  transition: .3s ease;
+    -webkit-transform: translateY(2%);
+            transform: translateY(2%);
+  transition: .4s ease;
 }
 
 .photo-width.lazyloaded {
     opacity: 1;
     -webkit-transform: translateY(0);
             transform: translateY(0);
-    transition: .3s ease;
+    transition: .4s ease;
 }
 
 .hidden {
@@ -255,7 +250,7 @@ img {
 }
 
 .fw .photo-width {
-  max-width: 100%;
+  width: 100%;
 }
 
 .fw, .fw-2 {
@@ -279,20 +274,36 @@ img {
   padding: 20em 0;
 }
 
-.gallery, .landscape {
+.gallery, .landscape, .portrait {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 25px 1.5em; }
+  padding: .75em 1.5em; }
 
-.gallery.two .photo-width {
-  flex-basis: 48%;
-  margin: 0 1%;
+.gallery.three {
+  padding: 0 1.5em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .gallery.three .photo-width {
-  flex-basis: 32%;
-  margin: 0 1%;
+  padding: .75em 0;
+}
+
+@media only screen and (min-width: 700px) {
+  .gallery.three {
+    flex-direction: row;
+    padding: .75em 1.5em;
+  }
+  .gallery.two .photo-width {
+    flex-basis: 48%;
+    margin: 0 1%;
+  }
+  .gallery.three .photo-width {
+    flex-basis: 32%;
+    margin: 0 1%;
+  }
 }
 
 .landscape .photo-width {
@@ -315,12 +326,12 @@ img {
     max-width: 1200px;
   }
 }
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1800px) {
   .gallery, .landscape {
     max-width: 1400px;
   }
 }
-@media only screen and (min-width: 2000px) {
+@media only screen and (min-width: 2200px) {
   .gallery, .landscape {
     max-width: 1800px;
   }
@@ -336,12 +347,12 @@ img {
     max-width: 1400px;
   }
 }
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1800px) {
   .quote-right, .quote-left {
     max-width: 1800px;
   }
 }
-@media only screen and (min-width: 2000px) {
+@media only screen and (min-width: 2200px) {
   .quote-right, .quote-left {
     max-width: 2000px;
   }
@@ -370,7 +381,7 @@ img {
     .quote-left {
       flex-direction: row-reverse;
     }
-    .quote-right .photo-width {
+    .quote-right .photo-width, .quote-left .photo-width {
       flex: 5;
     }
     .quote--content {
@@ -379,28 +390,11 @@ img {
     }
 }
 
-
-
-/*
-.photo-width {
-  }
-  @media only screen and (min-width: 700px) {
-    .photo-width {
-      max-width: 700px;
-    }
-  }
-  @media only screen and (min-width: 1000px) {
-    .photo-width {
-      max-width: 1000px;
-    }
-  }
+.quote--header {
+  font-family: "Neue Haas Grotesk Disp Bd", sans-serif;
+  font-size: 1.15rem; }
   @media only screen and (min-width: 1200px) {
-    .photo-width {
-      max-width: 1200px;
+    .quote--header {
+      font-size: 1.25rem;
     }
   }
-  @media only screen and (min-width: 1800px) {
-    .photo-width {
-      max-width: 1600px;
-    }
-  } */
