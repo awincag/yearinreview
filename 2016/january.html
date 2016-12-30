@@ -47,11 +47,20 @@
         <div class="page--hero">
           <picture>
             <source
-                data-srcset="assets/media/01jan/january.png"
+                data-srcset="assets/media/01jan/january-l.png"
+                media="(min-width: 1800px)" />
+            <source
+                data-srcset="assets/media/01jan/january-m.png"
+                media="(min-width: 1200px)" />
+            <source
+                data-srcset="assets/media/01jan/january-s.png"
+                media="(min-width: 700px)" />
+            <source
+                data-srcset="assets/media/01jan/january-phone.png"
                 media="(min-width: 100px)" />
             <img
                 data-sizes="auto"
-                data-src="assets/media/01jan/january.png"
+                data-src="assets/media/01jan/january-s.png"
                 class="lazyload" />
           </picture>
         </div>

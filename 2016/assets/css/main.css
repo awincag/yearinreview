@@ -412,14 +412,15 @@ img {
   z-index: 1;
   position: absolute;
   top: 0;
-  left: -3em;
+  left: 0;
   bottom: 0;
-  overflow: hidden;
+  right: 0;
 }
 
 .page--hero img {
-  width: 300%;
+  width: 100%;
 }
+/*
   @media only screen and (min-width: 700px) {
     .page--hero {
       left: -4em;
@@ -451,7 +452,7 @@ img {
     .page--hero img {
       width: 200%;
     }
-  }
+  } */
 
 .gallery, .landscape, .portrait {
   display: flex;
