@@ -3,7 +3,6 @@ html{
   /* font-family:proxima-nova,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif; */
   color:#ffffff;
   background-color: #000000;
-  line-height:1.51;
 }
 
 p{
@@ -249,10 +248,50 @@ img {
   flex-direction: column;
 }
 
+.new--medium {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column; }
+  @media only screen and (min-width: 700px) {
+    .new--medium {
+      flex-direction: row;
+    }
+    .new--column, .new--medium .photo-width {
+      width: 50%;
+    }
+  }
+
+.new--column-content {
+  max-width: 700px;
+  margin: 0 0 0 auto;
+}
+
 .new--major {
+  width: 100%;
   max-width: 1200px;
-  padding: .75em 1.5em; }
+}
+
+.new--major, .new--medium {
+  margin: 8em 0 0 0; }
+  @media only screen and (min-width: 700px) {
+    .new--major, .new--medium {
+      margin: 12em 0 0 0;
+    }
+  }
+  @media only screen and (min-width: 1000px) {
+    .new--major, .new--medium {
+      margin: 15em 0 0 0;
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    .new--major, .new--medium {
+      margin: 18em 0 0 0;
+    }
+  }
   @media only screen and (min-width: 1800px) {
+    .new--major, .new--medium {
+      margin: 20em 0 0 0;
+    }
     .new--major {
       max-width: 1400px;
     }
@@ -260,11 +299,26 @@ img {
 
 
 .new--break {
-  width: 100%;
+  margin: .75em 1.5em;
+}
+
+.new--medium .new--break {
+  margin: 0 1.5em .75em;
+}
+
+.new--break, .new--medium .new--break {
   border-bottom: 3px solid #414141;
 }
 
 .new--content {
+  margin: .75em 1.5em;
+}
+
+.new--medium .new--content {
+  margin: 0 1.5em .75em;
+}
+
+.new--content, .new--medium .new--content {
   padding: 1.5em 0 0 0;
   display: flex;
   flex-direction: column; }
@@ -273,6 +327,7 @@ img {
       flex-direction: row;
     }
 }
+
 
 .new--title, .new--content-main {
   flex: 1;
@@ -285,6 +340,9 @@ img {
   @media only screen and (min-width: 700px) {
     .new--title {
       padding: 0;
+    }
+    .new--medium .new--title {
+      padding: 0 0 2em 0;
     }
 }
 
@@ -366,26 +424,36 @@ img {
   margin: 2em 0;
 }
 
+.fw-quote {
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+  @media only screen and (min-width: 1000px) {
+    .fw-quote {
+      flex-direction: row;
+      margin: 25px 1%;
+    }
+  }
+
+.fw-quote .photo-width {
+  flex: 5;
+}
+
+.fw-quote .new--content-main {
+  flex: 3;
+  margin: 1em 1.5em 2em; }
+  @media only screen and (min-width: 1000px) {
+    .fw-quote .new--content-main {
+      margin: 0 4em;
+    }
+  }
+
 .page-header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 0 5em 0; }
-  @media only screen and (min-width: 700px) {
-    .page-header {
-      margin: 0 0 10em 0;
-    }
-  }
-  @media only screen and (min-width: 1000px) {
-    .page-header {
-      margin: 0 0 12em 0;
-    }
-  }
-  @media only screen and (min-width: 1200px) {
-    .page-header {
-      margin: 0 0 15em 0;
-    }
-  }
+}
+
 
 
 .page--title {
@@ -500,6 +568,9 @@ img {
     max-width: 700px;
     padding: 25px 1%;
   }
+  .portrait {
+    padding: 25px 1%;
+  }
 }
 @media only screen and (min-width: 1000px) {
   .gallery, .landscape {
@@ -575,19 +646,92 @@ img {
     }
 }
 
-.quote--header {
+.quote--header, .caption--title {
   font-family: "Neue Haas Grotesk Disp Bd", sans-serif;
   display: flex;
   color: #D8D8D8;
   margin: 0 0 .5em 0;
   font-size: .937rem; }
   @media only screen and (min-width: 1000px) {
-    .quote--header {
+    .quote--header, .caption--title  {
       font-size: 1rem;
     }
   }
   @media only screen and (min-width: 1200px) {
-    .quote--header {
+    .quote--header, .caption--title  {
       font-size: 1.15rem;
     }
   }
+
+.caption {
+  position: relative;
+}
+
+.open {
+  position: absolute;
+  right: 1.5em;
+  bottom: 1.5em;
+  background-color: rgba(0,0,0,.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5em 1em;
+  z-index: 2;
+}
+
+.open-cross::after, .open-cross::before {
+  display: block;
+  content: '';
+  width: 25px;
+  height: 1px;
+  background-color: #fff;
+  transition: 0.2s ease-out;
+}
+
+.open-cross::after {
+  transform: rotate(90deg);
+}
+
+.active .open-cross::after {
+  opacity: 0;
+}
+
+.fw-caption {
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: 0.2s ease-out;
+  padding: 1.5em;
+  background-color: rgba(0,0,0,.65);
+}
+
+
+.active .fw-caption {
+  opacity: 1;
+  color: #ffffff;
+}
+  @media only screen and (min-width: 1000px) {
+    .open {
+      display: none;
+      visibility: hidden;
+    }
+    .fw-caption {
+      opacity: 1;
+      color: #ffffff;
+      position: absolute;
+      bottom: 1.5em;
+      right: 1.5em;
+      left: auto;
+      top: auto;
+      padding: 1.5em;
+      background-color: rgba(0,0,0,.65);
+      max-width: 400px;
+  }
+
+.fw-caption p {
+  margin: 0;
+}
