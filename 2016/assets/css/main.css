@@ -249,6 +249,81 @@ img {
   flex-direction: column;
 }
 
+.new--major {
+  max-width: 1200px;
+  padding: .75em 1.5em;
+}
+
+.new--break {
+  width: 100%;
+  border-bottom: 3px solid #414141;
+}
+
+.new--content {
+  padding: 1.5em 0 0 0;
+  display: flex;
+  flex-direction: column; }
+  @media only screen and (min-width: 700px) {
+    .new--content {
+      flex-direction: row;
+    }
+}
+
+.new--title, .new--content-main {
+  flex: 1;
+}
+
+.new--title {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 1em 0;}
+  @media only screen and (min-width: 700px) {
+    .new--title {
+      padding: 0;
+    }
+}
+
+.new--header {
+  font-family: "Neue Haas Grotesk Disp Bla", sans-serif;
+  color: #ffffff;
+  font-size: 1.5rem; }
+  @media only screen and (min-width: 1000px) {
+    .new--header {
+      font-size: 2.25rem;
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    .new--header {
+      font-size: 3.25rem;
+    }
+  }
+  @media only screen and (min-width: 1800px) {
+    .new--header {
+      font-size: 4.25rem;
+    }
+}
+
+.new--location {
+  font-family: "Miller Disp It";
+  font-style: Italic;
+  font-size: 1.25rem;
+  color: #838383; }
+  @media only screen and (min-width: 1000px) {
+    .new--location {
+      font-size: 1.5rem;
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    .new--location {
+      font-size: 1.85rem;
+    }
+  }
+  @media only screen and (min-width: 1800px) {
+    .new--location {
+      font-size: 2.25rem;
+    }
+}
+
 .fw .photo-width {
   width: 100%;
 }
@@ -392,9 +467,15 @@ img {
 
 .quote--header {
   font-family: "Neue Haas Grotesk Disp Bd", sans-serif;
-  font-size: 1.15rem; }
+  color: #D8D8D8;
+  font-size: .937rem; }
+  @media only screen and (min-width: 1000px) {
+    .quote--header {
+      font-size: 1rem;
+    }
+  }
   @media only screen and (min-width: 1200px) {
     .quote--header {
-      font-size: 1.25rem;
+      font-size: 1.15rem;
     }
   }
