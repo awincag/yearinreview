@@ -34,7 +34,9 @@ p{
 */
 
 body {
+  position: relative;
   margin: 0;
+  height: 100%;
 }
 
 
@@ -55,15 +57,6 @@ body {
 
 ::-webkit-scrollbar {
     display: none;
-}
-
-h1,h2,h3,h4,h5,h6{
-  font-family: "FFMarkWebProBold", sans-serif;
-  margin:0;
-  line-height: 1.3em;
-  color:inherit;
-  display:inherit;
-  text-rendering:optimizelegibility
 }
 
 h1 small,h2 small,h3 small,h4 small,h5 small,h6 small{
@@ -117,62 +110,9 @@ h4{
   font-size:1.55rem;
 }
 
-.h4 {
-  font-family: "FFMarkWebProBold", sans-serif;
-  font-size: 1.25rem;
-  text-rendering: optimizelegibility;  }
-  @media only screen and (min-width: 700px) {
-    .h4 {
-      font-size: 1.375rem;
-    }
-  }
-  @media only screen and (min-width: 1000px) {
-    .h4 {
-      font-size: 1.5rem;
-    }
-  }
-  @media only screen and (min-width: 1200px) {
-    .h4 {
-      font-size: 1.75rem;
-    }
-  }
-  @media only screen and (min-width: 1800px) {
-    .h4 {
-      font-size: 2rem;
-    }
-}
-
 h5{
   font-size:1.5rem
 }
-
-.h5 {
-  font-family: "FFMarkWebProBold", sans-serif;
-  font-size: 1.25rem;
-  line-height: 1.3em;
-  text-rendering: optimizelegibility;  }
-  @media only screen and (min-width: 700px) {
-    .h5 {
-      font-size: 1.375rem;
-    }
-  }
-  @media only screen and (min-width: 1000px) {
-    .h5 {
-      font-size: 1.5rem;
-    }
-  }
-  @media only screen and (min-width: 1200px) {
-    .h5 {
-      font-size: 1.75rem;
-    }
-  }
-  @media only screen and (min-width: 1800px) {
-    .h5 {
-      font-size: 2rem;
-    }
-}
-
-
 
 h6{
   font-size:1.1em
@@ -208,6 +148,8 @@ a, button {
   color:#333;
   text-decoration:none;
 }
+
+
 
 img {
   width: 100%;
@@ -559,7 +501,7 @@ img {
   }
 }
 
-.landscape .photo-width {
+.landscape .photo-width, .gallery.two .photo-width {
   margin: 0 1%;
 }
 
@@ -709,7 +651,6 @@ img {
   background-color: rgba(0,0,0,.65);
 }
 
-
 .active .fw-caption {
   opacity: 1;
   color: #ffffff;
@@ -731,7 +672,105 @@ img {
       background-color: rgba(0,0,0,.65);
       max-width: 400px;
   }
+}
 
 .fw-caption p {
   margin: 0;
+}
+
+.navigation--open {
+  position: fixed;
+  top: 3em;
+  right: 3em;
+  z-index: 3;
+}
+
+.menu {
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 4;
+  display: none;
+  transition: .3s ease-out;
+  overflow: scroll;
+}
+
+.menu.active {
+  opacity: 1;
+  display: block;
+}
+
+  @media only screen and (min-width: 700px) {
+    .menu {
+      display: block;
+      left: auto;
+      right: -25em;
+    }
+    .menu.active {
+      right: 0;
+    }
+  }
+
+.menu.active .body-overlay {
+  left: 0;
+}
+
+.overlay {
+
+}
+
+.menu--background {
+  background-color: #101010;
+  display: flex;
+  flex-direction: column;
+  padding: 3em;
+  height: 100%;
+}
+
+.header--content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu--content {
+  min-width: 250px;
+}
+
+.close-overlay, .menu--home, .navigation--open {
+  font-size: 1rem;
+  font-family: "Neue Haas Grotesk Disp Reg";
+}
+
+.jump {
+  padding:0 0 1em 0;
+}
+
+.jump-to {
+  font-family: "Miller Disp It";
+  font-style: Italic;
+  font-size: 1.25rem;
+  color: #838383;
+}
+
+.menu--navigation li a, .close-overlay span, .navigation--open span {
+  color: #d8d8d8;
+  transition: .15s ease-out;
+}
+
+.menu--home a {
+  color: #838383;
+  transition: .15s ease-out;
+}
+
+.menu--home a:hover, .menu--navigation li a:hover, .close-overlay a:hover, .navigation--open a:hover {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.menu--navigation li {
+  font-family: "Neue Haas Grotesk Disp Bd", sans-serif;
+  padding: 0 0 1em 0;
+  font-size: 1.15rem;
 }
