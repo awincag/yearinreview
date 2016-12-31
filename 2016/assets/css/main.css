@@ -774,3 +774,152 @@ img {
   padding: 0 0 1em 0;
   font-size: 1.15rem;
 }
+
+/*
+	Small Player
+*/
+div#small-player{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1.5em;
+	background-color: rgba(0,0,0,0.0);
+  transition: 0.3s ease-out;
+}
+
+#small-player:hover {
+  background-color: rgba(0,0,0,.95);
+}
+
+/*
+   Small Player Left
+*/
+div#small-player-left{
+    height: 45px;
+    width: 25px;
+    float: left;
+}
+
+/*
+    Small Player Album Art
+*/
+img#small-player-album-art{
+    width: 45px;
+    height: 45px;
+    float: left;
+}
+
+/*
+    Small Player Middle
+*/
+div#small-player-middle{
+    cursor: pointer;
+}
+div#small-player-middle-top{
+    width: 5em;
+    float: left;
+    height: 30px;
+}
+
+@media only screen and (max-width: 700px) {
+  #small-player-middle-bottom {
+    display: none;
+  }
+}
+div#small-player-middle-bottom{
+    flex: 1;
+    float: left;
+}
+
+/*
+    Small Player Right
+*/
+
+#small-player-middle {
+    display: flex;
+    align-items: center;
+}
+
+div#small-player-right{
+    width: 25px;
+    float: left;
+    padding-top: 27px;
+}
+
+/*
+    Play Pause
+*/
+div.amplitude-play-pause{
+    margin: 5px auto;
+    height: 23px;
+    width: 20px;
+    cursor: pointer;
+}
+div.amplitude-paused{
+    background-image: url('../images/black-play.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+div.amplitude-playing{
+    background-image: url('../images/black-pause.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/*
+    Song Time Visualization
+*/
+#song-time-visualization{
+    height: 5px;
+    background-color: #bebebe;
+}
+#song-time-visualization div.amplitude-song-time-visualization-status{
+    background-color: #676261;
+    height: 5px;
+}
+
+/*
+    Now Playing Information
+*/
+
+#small-player-middle-meta {
+  display: flex;
+  padding: 0 1em;
+  align-items: center;
+}
+
+#now-playing-title{
+    font-family: "Neue Haas Grotesk Disp Reg", sans-serif;;
+    font-weight: 300;
+    font-size: .937rem;
+    color: #bebebe;
+    line-height: 14px;
+}
+.album-information{
+    font-family: "Miller Disp It";
+    font-style: Italic;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #676261;
+}
+/*
+    Current song time
+*/
+#current-time{
+    font-family: "Neue Haas Grotesk Disp Reg", sans-serif;;
+    font-weight: 300;
+    font-size: .937rem;
+    color: #676261;
+    padding: 0 1em;
+}
+
+#small-player-middle-meta, #small-player-middle-bottom, #current-time {
+  opacity: 0;
+  transition: .3s ease-out;
+}
+
+
+#small-player:hover #small-player-middle-meta, #small-player:hover #small-player-middle-bottom, #small-player:hover #current-time {
+  opacity: 1;
+}
