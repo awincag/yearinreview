@@ -574,6 +574,15 @@ a:hover.next {
   }
 }
 
+@media only screen and (min-width: 700px) {
+  .reverse {
+    flex-direction: row-reverse;
+  }
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
 
 .quote-right, .quote-left {
   padding: 25px 1.5em;
