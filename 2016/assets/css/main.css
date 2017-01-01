@@ -435,6 +435,24 @@ img {
 .page--hero img {
   width: 100%;
 }
+
+.page--next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.next {
+  font-family: "Neue Haas Grotesk Disp Reg", sans-serif;;
+  font-size: 1.15rem;
+  color: #d8d8d8;
+  padding: 1em 0;
+}
+
+a:hover.next {
+  color: #ffffff;
+}
 /*
   @media only screen and (min-width: 700px) {
     .page--hero {
