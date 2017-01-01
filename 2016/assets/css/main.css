@@ -578,6 +578,7 @@ a:hover.next {
   .reverse {
     flex-direction: row-reverse;
   }
+}
 
 .reverse {
   flex-direction: row-reverse;
