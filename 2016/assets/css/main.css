@@ -914,7 +914,7 @@ div.amplitude-playing{
 #small-player-middle-meta {
   display: flex;
   padding: 0 1em;
-  align-items: center;
+  flex-direction: column;
 }
 
 #now-playing-title{
@@ -922,13 +922,13 @@ div.amplitude-playing{
     font-weight: 300;
     font-size: .937rem;
     color: #bebebe;
-    line-height: 14px;
+    line-height: 24px;
 }
 .album-information{
     font-family: "Miller Disp It";
     font-style: Italic;
     font-weight: 300;
-    font-size: .93rem;
+    font-size: .875rem;
     color: #676261;
 }
 /*
