@@ -848,11 +848,20 @@ img#small-player-album-art{
 div#small-player-middle{
     cursor: pointer;
 }
-div#small-player-middle-top{
-    width: 5em;
+
+
+#small-player-middle-top{
+    width: 1em;
+    padding-right: 1em;
     float: left;
-    height: 30px;
+    height: 30px; }
+@media only screen and (min-width: 700px) {
+  #small-player-middle-top{
+      width: 5em;
+      padding-right: 0;
+  }
 }
+
 
 @media only screen and (max-width: 700px) {
   #small-player-middle-bottom {
@@ -944,7 +953,14 @@ div.amplitude-playing{
     font-size: .937rem;
     color: #676261;
     padding: 0 1em;
-}
+    flex: 1;
+    text-align: right; }
+    @media only screen and (min-width: 700px) {
+      #current-time{
+          flex: 0;
+      }
+    }
+
 
 #small-player-middle-meta, #small-player-middle-bottom, #current-time {
   opacity: 0;
