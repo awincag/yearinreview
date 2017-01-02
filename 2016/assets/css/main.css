@@ -194,6 +194,139 @@ img {
   flex-direction: column;
 }
 
+
+.home--main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative; }
+  @media only screen and (min-width: 700px) {
+    .home--main {
+      height: 60vh;
+      padding-top: 20vh;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  }
+  @media only screen and (min-width: 1800px) {
+    .home--main {
+      max-width: 1400px;
+    }
+  }
+
+.home--photo {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.home--title, .home--start {
+  padding: 1.5em; }
+  @media only screen and (min-width: 1200px) {
+    .home--title, .home--start {
+      padding: 2em 0;
+    }
+  }
+
+.home--start {
+  display: flex;
+}
+
+.start {
+  font-family: "Neue Haas Grotesk Disp Reg", sans-serif;
+  padding: 1em 0;
+  font-size: 1.25rem;
+  letter-spacing: 1px; }
+
+
+.home--list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home--item {
+  flex: 1;
+  display: flex;
+  border: solid #4A4A4A;
+  border-left: 1px;
+  border-right: 1px;
+  margin: 0 1.5em;
+  padding: 1.5em 0; }
+  @media only screen and (min-width: 700px) {
+    .home--item {
+      padding: 3em 0;
+      max-width: 1200px;
+    }
+  }
+  @media only screen and (min-width: 1800px) {
+    .home--item {
+      padding: 4em 0;
+      max-width: 1400px;
+    }
+  }
+
+.item--number {
+  flex: 1;
+}
+
+.item--content {
+  flex: 3;
+}
+
+.item--number-number {
+  font-family: "Miller Ban Lt";
+  color: #ffffff;
+  font-size: 4rem; }
+  @media only screen and (min-width: 700px) {
+    .item--number-number {
+      font-size: 6.5rem;
+    }
+  }
+  @media only screen and (min-width: 1000px) {
+    .item--number-number {
+      font-size: 8rem;
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    .item--number-number {
+      font-size: 10rem;
+    }
+  }
+  @media only screen and (min-width: 1800px) {
+    .item--number-number {
+      font-size: 14rem;
+    }
+}
+
+.item--content-title {
+  font-family: "Neue Haas Grotesk Disp Bd", sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.item--content ul {
+  margin: .5em 0;
+}
+
+.item--content li {
+  padding: 0 0 .25em 0;
+}
+
+.item--content-event {
+  color: #ffffff;
+}
+
+.item--content-location {
+  color: #9B9B9B;
+  font-family: "Miller Disp It";
+  font-style: Italic;
+}
+
+
+
 .new--medium {
   display: flex;
   justify-content: flex-start;
@@ -448,7 +581,7 @@ img {
 }
 
 .next {
-  font-family: "Neue Haas Grotesk Disp Reg", sans-serif;;
+  font-family: "Neue Haas Grotesk Disp Reg", sans-serif;
   font-size: 1.15rem;
   color: #d8d8d8;
   padding: 1em 0;
