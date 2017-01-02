@@ -242,17 +242,33 @@ img {
 
 
 .home--list {
+  margin: 2em 0 0 0;
+  flex-wrap: wrap;
   display: flex;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
+  @media only screen and (min-width: 700px) {
+    .home--list {
+      margin: 4em 0 0 0;
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    .home--list {
+      margin: 7em 0 0 0;
+    }
+  }
+  @media only screen and (min-width: 1800px) {
+    .home--list {
+      margin: 10em 0 0 0;
+    }
+  }
 
 .home--item {
   flex: 1;
+  flex-basis: 100%;
   display: flex;
-  border: solid #4A4A4A;
-  border-left: 1px;
-  border-right: 1px;
+  transition: 0.2s ease-out;
+  border-top: 1px solid #4A4A4A;
   margin: 0 1.5em;
   padding: 1.5em 0; }
   @media only screen and (min-width: 700px) {
@@ -266,7 +282,11 @@ img {
       padding: 4em 0;
       max-width: 1400px;
     }
-  }
+}
+
+a:hover.home--item {
+  background-color: #0a0a0a;
+}
 
 .item--number {
   flex: 1;
@@ -276,43 +296,86 @@ img {
   flex: 3;
 }
 
+@media only screen and (min-width: 700px) {
+  .item--number {
+    flex: 3;
+  }
+  .item--content {
+    flex: 4;
+  }
+}
+
 .item--number-number {
   font-family: "Miller Ban Lt";
   color: #ffffff;
-  font-size: 4rem; }
+  line-height: .75em;
+  font-size: 3.5rem; }
   @media only screen and (min-width: 700px) {
     .item--number-number {
-      font-size: 6.5rem;
+      font-size: 4.25rem;
     }
   }
   @media only screen and (min-width: 1000px) {
     .item--number-number {
-      font-size: 8rem;
+      font-size: 5rem;
     }
   }
   @media only screen and (min-width: 1200px) {
     .item--number-number {
-      font-size: 10rem;
+      font-size: 6rem;
     }
   }
   @media only screen and (min-width: 1800px) {
     .item--number-number {
-      font-size: 14rem;
+      font-size: 10rem;
     }
 }
 
 .item--content-title {
   font-family: "Neue Haas Grotesk Disp Bd", sans-serif;
   font-size: 1.25rem;
-  font-weight: bold;
+  font-weight: bold; }
+  @media only screen and (min-width: 1000px) {
+    .item--content-title {
+      font-size: 2rem;
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    .item--content-title {
+      font-size: 2.5rem;
+    }
+  }
+  @media only screen and (min-width: 1800px) {
+    .item--content-title {
+      font-size: 3rem;
+    }
 }
 
+
 .item--content ul {
-  margin: .5em 0;
+  margin: .5em 0 0 0;
 }
 
 .item--content li {
   padding: 0 0 .25em 0;
+}
+
+.item--content-event, .item--content-location {
+  font-size: 1rem; }
+  @media only screen and (min-width: 1000px) {
+    .item--content-event, .item--content-location {
+      font-size: 1.15rem;
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    .item--content-event, .item--content-location {
+      font-size: 1.25rem;
+    }
+  }
+  @media only screen and (min-width: 1800px) {
+    .item--content-event, .item--content-location {
+      font-size: 1.5rem;
+    }
 }
 
 .item--content-event {
@@ -324,6 +387,7 @@ img {
   font-family: "Miller Disp It";
   font-style: Italic;
 }
+
 
 
 
