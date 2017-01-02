@@ -145,8 +145,12 @@ li{
 }
 
 a, button {
-  color:#333;
-  text-decoration:none;
+  color:#d0d0d0;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffffff;
 }
 
 
