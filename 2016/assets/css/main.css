@@ -55,10 +55,6 @@ body {
   overflow-y: scroll;
 }
 
-::-webkit-scrollbar {
-    display: none;
-}
-
 h1 small,h2 small,h3 small,h4 small,h5 small,h6 small{
   font-family: inherit;
   font-weight:normal;
@@ -198,22 +194,10 @@ img {
 .home--main {
   height: 100vh;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  position: relative; }
-  @media only screen and (min-width: 700px) {
-    .home--main {
-      height: 60vh;
-      padding-top: 20vh;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-  }
-  @media only screen and (min-width: 1800px) {
-    .home--main {
-      max-width: 1400px;
-    }
-  }
+  flex-wrap: wrap;
+  align-items: space-between;
+  position: relative;
+}
 
 .home--photo {
   position: absolute;
@@ -222,15 +206,35 @@ img {
   bottom: 0;
 }
 
+.home--photo img {
+  width: inherit;
+  height: 100%;
+}
+
 .home--title, .home--start {
-  padding: 1.5em; }
+  padding: 1.5em;
+  z-index: 1;
+  flex-basis: 100%;
+  max-width: 1200px;
+  margin: 0 auto; }
+  @media only screen and (min-width: 700px) {
+    .home--title, .home--start {
+      padding: 2em 1.5em;
+    }
+  }
   @media only screen and (min-width: 1200px) {
     .home--title, .home--start {
-      padding: 2em 0;
+      padding: 8em 0;
+    }
+  }
+  @media only screen and (min-width: 1800px) {
+    .home--title, .home--start {
+      max-width: 1400px;
     }
   }
 
 .home--start {
+  align-items: flex-end;
   display: flex;
 }
 
@@ -238,8 +242,22 @@ img {
   font-family: "Neue Haas Grotesk Disp Reg", sans-serif;
   padding: 1em 0;
   font-size: 1.25rem;
-  letter-spacing: 1px; }
-
+  letter-spacing: 0.05em; }
+  @media only screen and (min-width: 1000px) {
+    .start {
+      font-size: 2rem;
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    .start {
+      font-size: 2.5rem;
+    }
+  }
+  @media only screen and (min-width: 1800px) {
+    .start {
+      font-size: 3rem;
+    }
+}
 
 .home--list {
   margin: 2em 0 0 0;
@@ -268,7 +286,7 @@ img {
   flex-basis: 100%;
   display: flex;
   transition: 0.2s ease-out;
-  border-top: 1px solid #4A4A4A;
+  border-top: 1px solid #303030;
   margin: 0 1.5em;
   padding: 1.5em 0; }
   @media only screen and (min-width: 700px) {
