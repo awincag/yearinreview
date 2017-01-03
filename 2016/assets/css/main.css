@@ -799,11 +799,6 @@ a:hover.next {
   }
 }
 
-.reverse {
-  flex-direction: row-reverse;
-}
-
-
 .quote-right, .quote-left {
   padding: 25px 1.5em;
   display: flex;
