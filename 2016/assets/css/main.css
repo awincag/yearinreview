@@ -1,12 +1,14 @@
 html{
-  font-family: "Miller Disp Rom", serif;
+  font-family: "Miller Disp Lt", serif;
   /* font-family:proxima-nova,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif; */
   color:#ffffff;
   background-color: #000000;
 }
 
 p{
-  font-family: "Miller Disp Rom", serif;
+  font-family: "Miller Disp Lt", serif;
+  font-style: normal;
+  font-weight: normal;
   font-size: 1rem;
   line-height: 1.51em;
   margin: 0 0 1.75em 0;
