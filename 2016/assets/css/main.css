@@ -12,7 +12,10 @@ p{
   font-size: 1rem;
   line-height: 1.51em;
   margin: 0 0 1.75em 0;
-  text-rendering: optimizelegibility; }
+  text-rendering: optimizelegibility;
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased; }
   @media only screen and (min-width: 1200px) {
     p {
       font-size: 1.063rem;
